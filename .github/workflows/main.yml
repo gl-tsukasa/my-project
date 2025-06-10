@@ -5,7 +5,6 @@ on:
 jobs:
   pr_commented:
     name: PR comment
-    if: ${{ github.event.issue.labeled }}
     runs-on: ubuntu-latest
     steps:
       - run: |
